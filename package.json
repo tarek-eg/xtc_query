@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "scripts": {
+    "xtc": "node -r dotenv/config  --loader ts-node/esm/transpile-only.mjs --experimental-specifier-resolution=node xtc.ts"
+  },
+  "dependencies": {
+    "@dfinity/agent": "^0.10.2",
+    "@dfinity/authentication": "^0.10.2",
+    "@dfinity/identity": "^0.10.2",
+    "@dfinity/principal": "^0.10.2",
+    "dotenv": "^10.0.0",
+    "isomorphic-fetch": "^3.0.0",
+    "sha256": "^0.2.0",
+    "ts-node": "10.4.0"
+  },
+  "devDependencies": {
+    "@types/sha256": "^0.2.0"
+  }
+}
